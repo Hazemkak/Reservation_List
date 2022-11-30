@@ -3,7 +3,6 @@ import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import { ReservationType } from "../../interfaces/Types";
-import { businessDateToDate } from "../../helpers/dateHelper";
 
 interface ListBodyProps {
   page: number;
@@ -19,6 +18,9 @@ function ListBody(props: ListBodyProps) {
         ?.slice(page * perPage, page * perPage + perPage)
         ?.map((reservation) => (
           <TableRow key={reservation?.id}>
+            <TableCell align="left" padding="normal">
+              {reservation?.id}
+            </TableCell>
             <TableCell align="left" padding="normal">
               {reservation?.customer}
             </TableCell>

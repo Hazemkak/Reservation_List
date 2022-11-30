@@ -1,11 +1,15 @@
+.header_div {
+  background-color: gainsboro;
+}
+
 .parent_div {
   width: 100%;
   display: flex;
 }
 
 .search_div {
-  flex-grow: 6;
-  padding: 10px 20px;
+  flex-grow: 10;
+  padding: 20px 20px;
 }
 
 .filter_div {

@@ -9,6 +9,7 @@ import { ReservationKeys } from "../../interfaces/Types";
 type HeaderType = Array<{ name: string; id: ReservationKeys }>;
 
 const TableHeaders: HeaderType = [
+  { name: "ID", id: "id" },
   { name: "Customer Name", id: "customer" },
   { name: "Date", id: "businessDate" },
   { name: "Status", id: "status" },
@@ -27,7 +28,7 @@ interface ListHeadProps {
 function ListHead(props: ListHeadProps) {
   const { sortedById, SortData } = props;
   return (
-    <TableHead>
+    <TableHead className="header_div">
       <TableRow>
         {TableHeaders.map((header, i) => (
           <TableCell key={i} align="left" padding="normal">

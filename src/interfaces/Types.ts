@@ -5,6 +5,7 @@ export type StatusType =
   | "NOT CONFIRMED";
 
 export type ShiftType = "BREAKFAST" | "LUNCH" | "DINNER";
+export type AreaType = "BAR" | "MAIN ROOM";
 
 export interface CustomerType {
   firstName: string;
@@ -32,6 +33,6 @@ export interface ReservationType {
   end: string;
   quantity: number;
   customer: string;
-  area: string;
+  area: AreaType;
   guestNotes: string;
 }
