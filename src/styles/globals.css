@@ -1,0 +1,7 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(55, 95, 148),
+    rgba(255, 0, 0, 0)
+  );
+}

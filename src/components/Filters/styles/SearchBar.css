@@ -1,0 +1,16 @@
+.parent_div {
+  width: 100%;
+  display: flex;
+}
+
+.search_div {
+  flex-grow: 6;
+  padding: 10px 20px;
+}
+
+.filter_div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
